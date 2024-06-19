@@ -21,6 +21,7 @@ function App() {
     filterStories();
   }, [searchTerm, stories]);
 
+  // Function to fetch top stories from Hacker News API
   const fetchTopStories = async () => {
     try {
       const response = await fetch(`${HN_API_URL}/topstories.json`);
